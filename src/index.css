@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: anzo;
+    src: url(./assets/ChangaOne-Regular.ttf);
+}
+
+::selection {
+    background-color: rgb(87, 203, 203);
+}
+
+#page1-in{
+    position: relative;
+    perspective: 1000px;
+}
+#tiltDiv{
+    /* background-color: red; */
+    width: fit-content;
+}
