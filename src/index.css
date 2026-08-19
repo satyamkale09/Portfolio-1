@@ -17,3 +17,15 @@
     /* background-color: red; */
     width: fit-content;
 }
+/* Hide scrollbar but keep scrolling */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  scrollbar-width: none;
+}
