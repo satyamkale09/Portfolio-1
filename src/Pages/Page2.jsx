@@ -10,15 +10,14 @@ const Page2 = () => {
       {/* Projects Intro */}
       <div className="min-h-screen p-20 font-[anzo] ">
 
-        <h1 className="text-[6vw] leading-[4.5vw] text-[#CB2957]">
+        <h1 className="text-[6vw] leading-[4.5vw] text-[#DDDDDD] selection:bg-[#CB2957]">
+          <span className=" text-[#CB2957] selection:bg-[#DDDDDD]">"</span>
           A LOT OF IDEAS,
-          <br />
-          BUT SOME ARE STILL
-          <br />
-          UNDER CONSTRUCTION.
+          <br />BUT SOME ARE STILL
+          <br />UNDER CONSTRUCTION. <span className=" text-[#CB2957] selection:bg-[#DDDDDD]">"</span>
         </h1>
 
-        <p className="mt-8 text-[2vw] leading-[2.5vw] text-[#DDDDDD]">
+        <p className="mt-8 text-[2vw] leading-[2.5vw] text-[#DDDDDD] selection:bg-[#CB2957]">
           A collection of things I've built, explored,
           <br />
           and brought to life.
@@ -37,11 +36,11 @@ const Page2 = () => {
   {/* Left */}
   <div className="w-1/2">
 
-    <p className="text-[#CB2957] text-2xl mb-4">
+    <p className="text-[#CB2957] selection:bg-[#DDDDDD] text-2xl mb-4">
       01
     </p>
 
-    <h3 className="text-[6vw] leading-[5.5vw] text-[#DDDDDD]">
+    <h3 className="text-[6vw] selection:bg-[#CB2957] leading-[5.5vw] text-[#DDDDDD]">
       SMART EMAIL
       <br />
       ASSISTANT
@@ -53,11 +52,11 @@ const Page2 = () => {
   {/* Right */}
   <div className="w-1/2 text-right pb-2">
 
-    <p className="text-2xl md:text-3xl text-[#CB2957]">
+    <p className="text-2xl md:text-3xl text-[#CB2957] selection:bg-[#DDDDDD]">
       SPRING BOOT × GEMINI AI
     </p>
 
-    <p className="text-xl md:text-2xl leading-8 text-[#AAAAAA] mt-4">
+    <p className="text-xl md:text-2xl leading-8 text-[#AAAAAA] selection:bg-[#CB2957] mt-4">
       Java · Spring Boot · REST APIs · Gemini API · Maven · JSON
     </p>
 
@@ -80,7 +79,7 @@ const Page2 = () => {
 
   <div className="w-full lg:w-[65%]">
 
-    <p className="text-[1.7vw] leading-[2.5vw] text-[#DDDDDD]">
+    <p className="text-[1.7vw] leading-[2.5vw] selection:bg-[#CB2957] text-[#DDDDDD]">
       An AI-powered email reply generator built using
       Spring Boot and Google's Gemini API to generate
       context-aware email responses.
@@ -94,7 +93,7 @@ const Page2 = () => {
       href="https://github.com/satyamkale09/email-reply-generator"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-2xl text-[#CB2957] hover:text-[#DDDDDD] transition-colors duration-300"
+      className="text-2xl selection:bg-[#DDDDDD] text-[#CB2957] hover:text-[#DDDDDD] transition-colors duration-300"
     >
       GITHUB
       <i className="ri-arrow-right-up-line ml-2"></i>
@@ -109,29 +108,29 @@ const Page2 = () => {
 <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
   <div className="border-t border-[#444] pt-6 min-h-[140px]">
-    <p className="text-[#CB2957] text-2xl">01</p>
-    <p className="mt-4 text-xl leading-8">
+    <p className="text-[#CB2957] text-2xl selection:bg-[#DDDDDD]">01</p>
+    <p className="mt-4 text-xl leading-8 selection:bg-[#CB2957]">
       AI-powered email generation
     </p>
   </div>
 
   <div className="border-t border-[#444] pt-6 min-h-[140px]">
-    <p className="text-[#CB2957] text-2xl">02</p>
-    <p className="mt-4 text-xl leading-8">
+    <p className="text-[#CB2957] text-2xl selection:bg-[#DDDDDD]">02</p>
+    <p className="mt-4 text-xl leading-8 selection:bg-[#CB2957]">
       RESTful API architecture
     </p>
   </div>
 
   <div className="border-t border-[#444] pt-6 min-h-[140px]">
-    <p className="text-[#CB2957] text-2xl">03</p>
-    <p className="mt-4 text-xl leading-8">
+    <p className="text-[#CB2957] text-2xl selection:bg-[#DDDDDD]">03</p>
+    <p className="mt-4 text-xl leading-8 selection:bg-[#CB2957]">
       Input validation & exception handling
     </p>
   </div>
 
   <div className="border-t border-[#444] pt-6 min-h-[140px]">
-    <p className="text-[#CB2957] text-2xl">04</p>
-    <p className="mt-4 text-xl leading-8">
+    <p className="text-[#CB2957] text-2xl selection:bg-[#DDDDDD]">04</p>
+    <p className="mt-4 text-xl leading-8 selection:bg-[#CB2957]">
       API testing with Postman
     </p>
   </div>
@@ -152,11 +151,11 @@ const Page2 = () => {
   {/* Left */}
   <div className="w-1/2">
 
-    <p className="text-[#CB2957] text-2xl mb-4">
+    <p className="text-[#CB2957] selection:bg-[#DDDDDD] text-2xl mb-4">
       02
     </p>
 
-    <h3 className="text-[5.5vw] leading-[5vw] text-[#DDDDDD]">
+    <h3 className="text-[5.5vw] leading-[5vw] selection:bg-[#CB2957] text-[#DDDDDD]">
       PRIVACY-PRESERVING
       <br />
       ACTIVITY TRACKING
@@ -168,11 +167,11 @@ const Page2 = () => {
   {/* Right */}
   <div className="w-1/2 text-right pb-2">
 
-    <p className="text-2xl md:text-3xl text-[#CB2957]">
+    <p className="text-2xl md:text-3xl selection:bg-[#DDDDDD] text-[#CB2957]">
       MACHINE LEARNING × COMPUTER VISION
     </p>
 
-    <p className="text-xl md:text-2xl leading-8 text-[#AAAAAA] mt-4">
+    <p className="text-xl md:text-2xl leading-8 selection:bg-[#CB2957] text-[#AAAAAA] mt-4">
       Python · Machine Learning · Computer Vision · MySQL
     </p>
 
@@ -196,7 +195,7 @@ const Page2 = () => {
 
   <div className="w-full lg:w-[65%]">
 
-    <p className="text-[1.7vw] leading-[2.5vw] text-[#DDDDDD]">
+    <p className="text-[1.7vw] leading-[2.5vw] selection:bg-[#CB2957] text-[#DDDDDD]">
       A machine learning application for privacy-preserving
       activity classification in e-learning environments.
     </p>
@@ -209,7 +208,7 @@ const Page2 = () => {
       href="https://drive.google.com/file/d/1yfbxSU0YIF7tVQ8ndOLCWaCq4lMKO8sk/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-2xl text-[#CB2957] hover:text-[#DDDDDD] transition-colors duration-300"
+      className="text-2xl text-[#CB2957] hover:text-[#DDDDDD] transition-colors duration-300 selection:bg-[#DDDDDD]"
     >
       RESEARCH PAPER
       <i className="ri-arrow-right-up-line ml-2"></i>
@@ -224,29 +223,29 @@ const Page2 = () => {
 <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
   <div className="border-t border-[#444] pt-6 min-h-[140px]">
-    <p className="text-[#CB2957] text-2xl">01</p>
-    <p className="mt-4 text-xl leading-8">
+    <p className="text-[#CB2957] text-2xl selection:bg-[#DDDDDD]">01</p>
+    <p className="mt-4 text-xl leading-8 selection:bg-[#CB2957]">
       Data preprocessing & evaluation
     </p>
   </div>
 
   <div className="border-t border-[#444] pt-6 min-h-[140px]">
-    <p className="text-[#CB2957] text-2xl">02</p>
-    <p className="mt-4 text-xl leading-8">
+    <p className="text-[#CB2957] text-2xl selection:bg-[#DDDDDD] ">02</p>
+    <p className="mt-4 text-xl leading-8 selection:bg-[#CB2957]">
       Activity classification
     </p>
   </div>
 
   <div className="border-t border-[#444] pt-6 min-h-[140px]">
-    <p className="text-[#CB2957] text-2xl">03</p>
-    <p className="mt-4 text-xl leading-8">
+    <p className="text-[#CB2957] text-2xl selection:bg-[#DDDDDD]">03</p>
+    <p className="mt-4 text-xl leading-8 selection:bg-[#CB2957]">
       15% classification accuracy improvement
     </p>
   </div>
 
   <div className="border-t border-[#444] pt-6 min-h-[140px]">
-    <p className="text-[#CB2957] text-2xl">04</p>
-    <p className="mt-4 text-xl leading-8">
+    <p className="text-[#CB2957] text-2xl selection:bg-[#DDDDDD]">04</p>
+    <p className="mt-4 text-xl leading-8 selection:bg-[#CB2957]">
       Debugging & performance evaluation
     </p>
   </div>

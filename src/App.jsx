@@ -10,13 +10,10 @@ const App = () => {
   return (
     <div className="fixed inset-0 bg-[#DDDDDD] p-7">
 
-      {/* Fixed Portfolio Frame */}
       <div className="relative h-full w-full rounded-[50px] overflow-hidden">
 
-        {/* Fixed Header */}
         <Header />
 
-        {/* ONLY THIS SCROLLS */}
         <main className="h-full w-full overflow-y-auto scrollbar-hide">
           <Page1 />
           <Page2 />

@@ -44,7 +44,7 @@ const Page1 = () => {
     <section
       id="home"
       onMouseMove={mouseMoving}
-      className="relative h-screen w-full bg-black"
+      className="relative h-full w-full bg-black"
     >
 
       <div

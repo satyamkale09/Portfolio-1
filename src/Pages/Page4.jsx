@@ -9,11 +9,11 @@ const Page4 = () => {
 
       {/* Heading */}
       <div>
-        <p className="text-[#CB2957] text-2xl mb-8">
+        <p className="text-[#CB2957] text-2xl mb-8 selection:bg-[#DDDDDD]">
           CONTACT
         </p>
 
-        <h1 className="text-[7vw] leading-[6.5vw]">
+        <h1 className="text-[7vw] leading-[6.5vw] selection:bg-[#CB2957]">
           LET'S BUILD
           <br />
           SOMETHING
@@ -24,7 +24,7 @@ const Page4 = () => {
 
 
       {/* Contact Content */}
-      <div className="mt-20 flex flex-col lg:flex-row justify-between gap-16">
+      <div className="mt-20 selection:bg-[#CB2957] flex flex-col lg:flex-row justify-between gap-16">
 
         {/* Message */}
         <div className="lg:w-1/2">
@@ -40,20 +40,20 @@ const Page4 = () => {
         {/* Contact Details */}
         <div className="lg:w-1/3">
 
-          <p className="text-[#CB2957] text-xl mb-4">
+          <p className="text-[#CB2957] selection:bg-[#DDDDDD] text-xl mb-4">
             GET IN TOUCH
           </p>
 
           <a
             href="mailto:satyamkale22@gmail.com"
-            className="block text-2xl md:text-3xl hover:text-[#CB2957] transition-colors duration-300"
+            className="block text-2xl md:text-3xl selection:bg-[#CB2957] hover:text-[#CB2957] transition-colors duration-300"
           >
             satyamkale22@gmail.com
           </a>
 
 
           {/* Social Links */}
-          <div className="mt-12 flex flex-col gap-5">
+          <div className="mt-12 flex flex-col gap-5 selection:bg-[#CB2957]">
 
             <a
               href="https://linkedin.com/in/satyamkale" target="_blank"
@@ -81,11 +81,11 @@ const Page4 = () => {
       {/* Bottom CTA */}
       <div className="mt-32 border-t border-[#444] pt-8 flex flex-col md:flex-row justify-between gap-6">
 
-        <p className="text-[#AAAAAA]">
+        <p className="text-[#AAAAAA] selection:bg-[#CB2957]">
           AVAILABLE FOR
         </p>
 
-        <p className="text-xl text-[#CB2957]">
+        <p className="text-xl text-[#CB2957] selection:bg-[#DDDDDD]">
           SOFTWARE ENGINEERING OPPORTUNITIES
         </p>
 

@@ -38,7 +38,7 @@ const Header = () => {
     href="https://drive.google.com/file/d/1RJkIrIYzMw87KSiTFyM18baBrko7htjx/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
-    className=" text-[#DDDDDD] text-2xl hover:text-[#CB2957] transition-colors duration-300 pointer-events-auto font-[anzo]"
+    className=" text-[#DDDDDD] selection:bg-[#CB2957] text-2xl hover:text-[#CB2957] transition-colors duration-300 pointer-events-auto font-[anzo]"
   >
     RESUME<i className="ri-arrow-right-up-line ml-0"></i>
   </a>

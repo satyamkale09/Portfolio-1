@@ -4,17 +4,17 @@ const Page3 = () => {
   return (
     <section
       id="about"
-      className="min-h-screen w-full bg-black text-[#DDDDDD] font-[anzo]"
+      className="min-h-full w-full bg-black text-[#DDDDDD] font-[anzo]"
     >
 
       {/* About Header */}
       <div className="min-h-screen w-full px-20 py-32">
 
-        <p className="text-[#CB2957] text-2xl mb-8">
+        <p className="text-[#CB2957] selection:bg-[#DDDDDD] text-2xl mb-8">
           ABOUT SATYAM
         </p>
 
-        <h1 className="w-full text-[5vw] leading-[5vw] text-[#DDDDDD]">
+        <h1 className="w-full text-[5vw] selection:bg-[#CB2957] leading-[5vw] text-[#DDDDDD]">
           MORE THAN JUST A TITLE—
           <br />
           LET'S DIVE DEEPER.
@@ -22,7 +22,7 @@ const Page3 = () => {
 
 
         {/* About Description */}
-        <div className="w-full mt-20">
+        <div className="w-full mt-20 selection:bg-[#CB2957]">
 
           <p className="w-full text-[2vw] leading-[3vw] text-[#DDDDDD]">
             I'm a recent Information Technology graduate with a passion
@@ -58,11 +58,11 @@ const Page3 = () => {
       {/* Skills */}
       <div className="w-full px-20 pb-32">
 
-        <p className="text-[#CB2957] text-2xl mb-10">
+        <p className="text-[#CB2957] text-2xl mb-10 selection:bg-[#DDDDDD]">
           WHAT I WORK WITH
         </p>
 
-        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-6 selection:bg-[#CB2957]">
 
           <div className="border-t border-[#444] pt-5">
             <p className="text-2xl">JAVA</p>
