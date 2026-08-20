@@ -17,7 +17,7 @@ function SideBar({ menuOpen, setMenuOpen }) {
       {/* Sidebar */}
       <div
         className={`fixed top-0 right-0 h-screen w-[85%] sm:w-[450px]
-          bg-black z-50 p-10
+          bg-[black] z-50 p-10
           transition-transform duration-500 ease-in-out
           ${menuOpen
             ? 'translate-x-0 pointer-events-auto'

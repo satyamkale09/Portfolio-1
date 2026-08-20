@@ -5,7 +5,23 @@
     src: url(./assets/ChangaOne-Regular.ttf);
 }
 
-
+.portfolio-frame {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  background: #DDDDDD;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  padding: 28px;
+  border-radius: 0;
+}
 
 #page1-in{
     position: relative;
