@@ -6,44 +6,60 @@ import gsap from 'gsap'
 const Page1 = () => {
 
   const tiltRef = useRef(null)
+
   const [xVal, setXVal] = useState(0)
   const [yVal, setYVal] = useState(0)
 
   const mouseMoving = (e) => {
-    setXVal(
-      (e.clientX -
-        tiltRef.current.getBoundingClientRect().x -
-        tiltRef.current.getBoundingClientRect().width / 2) / 70
-    )
 
-    setYVal(
-      -(e.clientY -
-        tiltRef.current.getBoundingClientRect().y -
-        tiltRef.current.getBoundingClientRect().height / 2) / 20
-    )
+    if (!tiltRef.current) return
+
+    const rect = tiltRef.current.getBoundingClientRect()
+
+    const x = (e.clientX - rect.left - rect.width / 2) / 70
+
+    const y = -(e.clientY - rect.top - rect.height / 2) / 20
+
+    setXVal(x)
+    setYVal(y)
   }
 
+
   useGSAP(() => {
+
+    if (!tiltRef.current) return
+
     gsap.to(tiltRef.current, {
-      transform: `rotateX(${yVal}deg) rotateY(${xVal}deg)`,
-      duration: 3,
+      rotationX: yVal,
+      rotationY: xVal,
+      transformPerspective: 1000,
+      duration: 0.8,
       ease: 'power3.out'
     })
+
   }, [xVal, yVal])
+
 
   return (
     <section
-      onMouseMove={mouseMoving}
       id="home"
+      onMouseMove={mouseMoving}
       className="relative h-screen w-full bg-black"
     >
 
-
       <div
         id="page1-in"
-        className="relative h-full w-full p-24 bg-black overflow-hidden"
+        className="relative h-full w-full bg-black overflow-hidden"
       >
-        <Tilttext abc={tiltRef} />
+
+        {/* Positioning wrapper */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+
+          {/* This element gets the tilt */}
+          <Tilttext abc={tiltRef} />
+
+        </div>
+
       </div>
 
     </section>

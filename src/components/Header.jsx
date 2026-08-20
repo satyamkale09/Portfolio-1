@@ -13,7 +13,9 @@ const Header = () => {
 
     const handleScroll = () => {
       if (scrollContainer) {
-        setShowResume(scrollContainer.scrollTop < window.innerHeight * 0.8)
+        setShowResume(
+          scrollContainer.scrollTop < window.innerHeight * 0.8
+        )
       }
     }
 
@@ -27,24 +29,25 @@ const Header = () => {
 
   return (
     <>
-      <div className='absolute top-0 left-0 w-full flex justify-end items-center z-50 p-20'>
+      {/* Header */}
+      <div className="absolute top-0 left-0 w-full flex justify-end items-center z-50 p-20 pointer-events-none">
 
-        {/* Resume Button */}
-        {showResume && (
+        {/* Resume */}
+          {showResume && (
   <a
     href="https://drive.google.com/file/d/1RJkIrIYzMw87KSiTFyM18baBrko7htjx/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-black border-2 border-amber-50 text-sm sm:text-base md:text-lg lg:text-xl text-white px-3 py-2 sm:px-4 sm:py-2 md:px-5 md:py-2.5 lg:px-6 lg:py-3 rounded-full hover:bg-zinc-800 transition-all duration-300 inline-block"
+    className=" text-[#DDDDDD] text-2xl hover:text-[#CB2957] transition-colors duration-300 pointer-events-auto font-[anzo]"
   >
-    Resume
+    RESUME<i className="ri-arrow-right-up-line ml-0"></i>
   </a>
 )}
 
-        {/* Menu - Always Visible */}
+        {/* Menu */}
         <i
           onClick={() => setMenuOpen(true)}
-          className="ri-menu-3-line text-4xl text-[#DDDDDD] ml-3 cursor-pointer"
+          className="ri-menu-3-line text-4xl text-[#DDDDDD] ml-3 cursor-pointer hover:text-[#CB2957] transition-colors duration-300 pointer-events-auto"
         ></i>
 
       </div>
@@ -53,7 +56,6 @@ const Header = () => {
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
       />
-
     </>
   )
 }
